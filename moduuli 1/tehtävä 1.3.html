@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <p id="target"></p>
+  <script>
+    'use strict'
+    let numbers=[]
+    let i;
+    for (i=0 ; i<3; i++) {
+      let number = parseInt(prompt("anna numeroita"));
+      numbers.push(number)
+    }
+    const summa = numbers.reduce((accumulator, value) => {
+      return accumulator + value;
+    }, 0);
+      document.querySelector('#target').innerHTML = "summa = "+ summa;
+  </script>
+</body>
+</html>

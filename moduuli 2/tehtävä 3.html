@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title 3</title>
+</head>
+<body>
+
+<ul id="target">
+
+</ul>
+<script>
+  'use strict';
+  const koirat = [];
+  for (let i = 0; i < 7; i++) {
+    koirat.push(prompt(`syötä ${i}. koiran nimi: `));
+  }
+
+  koirat.sort();
+  for (let koira of koirat){
+    document.getElementById('target').innerHTML += `<li>${koira}</li>`;
+  }
+</script>
+</body>
+</html>
