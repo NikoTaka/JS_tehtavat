@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>T4</title>
+</head>
+<body>
+<p id="target"></p>
+<script>
+  'use strict'
+  const luokat=['Daredevil', 'Slytherin', 'Hufflepuff', 'Ravenclaw']
+
+  const nimi = prompt("anna nimesi: ");
+  const result = nimi.charAt(0).toUpperCase() + nimi.slice(1);
+  let lasku = Math.floor(Math.random(luokat)*4)
+
+  document.querySelector('#target').innerHTML = result + " you are " + luokat[lasku];
+
+</script>
+</body>
+</html>
