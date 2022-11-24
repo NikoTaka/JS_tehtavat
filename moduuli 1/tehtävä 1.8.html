@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul id="target">
+</ul>
+<script>
+        'use strict';
+        let alku = prompt('give starting year: ')
+        let loppu = prompt('give end year: ')
+        const list = document.getElementById('target')
+
+        if(alku>loppu) [alku, loppu] = [loppu, alku]
+
+        for(let i = alku; i<=loppu; i++){
+            if(i%4==0 && i%100!=0 || i%100==0 && i%400==0){
+                let node = document.createElement('LI')
+                list.appendChild(node)
+                node.innerHTML = i
+            }
+        }
+    </script>
+
+</body>
+</html>
