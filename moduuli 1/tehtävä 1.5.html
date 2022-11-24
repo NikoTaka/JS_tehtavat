@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>T5</title>
+</head>
+<body>
+<p id="target"></p>
+  <script>
+    'use strict'
+    const vuosi = parseInt(prompt("anna vuosiluku"));
+    if (vuosi % 4==0 && vuosi %100!=0 || vuosi % 100==0 && vuosi % 400==0 ){
+      document.querySelector('#target').innerHTML = vuosi + " is a leap year";
+    }
+    else {
+        document.querySelector('#target').innerHTML = vuosi + " is not a leap year";
+    }
+  </script>
+</body>
+</html>
